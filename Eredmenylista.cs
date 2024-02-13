@@ -16,5 +16,15 @@ namespace futoverseny
         {
             InitializeComponent();
         }
+
+        private void Eredmenylista_Load(object sender, EventArgs e)
+        {
+            var rendezett = Form1.lista.OrderByDescending(x => x.Eredmeny);
+
+            foreach (var item in rendezett)
+            {
+                richTextBox1.Text += item.Nev + ' ' + item.Eredmeny + '\n';
+            }
+        }
     }
 }

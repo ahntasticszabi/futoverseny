@@ -14,7 +14,7 @@ namespace futoverseny
     public partial class Form1 : Form
     {
         public static string fajlnev {get; set;}
-        public List<Futo> lista = new List<Futo>();
+        public static List<Futo> lista = new List<Futo>();
         public Form1()
         {
             InitializeComponent();
